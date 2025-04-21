@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2級電気工事施工管理技士試験のための直流機の知識</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        h1 {
+            color: #0056b3;
+            text-align: center;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #007bff;
+            border-left: 5px solid #007bff;
+            padding-left: 15px;
+            margin-top: 40px;
+        }
+        h3 {
+            color: #17a2b8;
+            margin-top: 30px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .formula {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+        .note {
+            background-color: #e7f5ff;
+            border-left: 5px solid #007bff;
+            padding: 10px 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #0056b3;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .important {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 10px 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .code {
+            font-family: 'Courier New', monospace;
+            background-color: #f0f0f0;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>2級電気工事施工管理技士試験のための直流機の知識</h1>
+
+    <p>2級電気工事施工管理技士の学科試験では、直流機（直流発電機・直流電動機）に関する基礎知識が出題されます。ここでは、試験に必要な直流機の基本構造、動作原理、種類、特性などを体系的にまとめています。</p>
+
+    <h2>1. 直流機の基本構造</h2>
+
+    <h3>1.1 直流機の主要構成部品</h3>
+
+    <p>直流機は主に以下の部品で構成されています：</p>
+    <ul>
+        <li><strong>固定子（界磁）</strong>: 磁界を発生させる部分</li>
+        <li><strong>回転子（電機子）</strong>: 電流が流れ回転する部分</li>
+        <li><strong>整流子</strong>: 回転子に流れる電流の向きを切り替える装置</li>
+        <li><strong>ブラシ</strong>: 整流子と接触し、電気を供給する部分</li>
+    </ul>
+
+    <h3>1.2 基本構造の特徴</h3>
+
+    <ul>
+        <li>固定子には界磁巻線が巻かれ、磁界を発生させます</li>
+        <li>回転子には電機子巻線が巻かれ、整流子と接続されています</li>
+        <li>整流子とブラシにより、電機子巻線に流れる電流の向きを制御し、一定方向の回転を維持します</li>
+    </ul>
+
+    <div class="note">
+        <p><strong>整流子の役割</strong>: 電機子コイルに流れる電流の向きを半周ごとに適切に切り替え、一方向の回転を持続させる重要な装置です。</p>
+    </div>
+
+    <img src="https://momoyoshiblog.com/wp-content/uploads/2023/02/DC-motor_figure3-1024x576.png" alt="直流電動機の構造">
+
+    <h2>2. 直流機の基本原理</h2>
+
+    <h3>2.1 フレミングの左手・右手の法則</h3>
+
+    <ul>
+        <li><strong>フレミングの左手の法則</strong>：電動機作用の原理（磁界中を流れる電流には、磁界と電流に対して垂直な方向に力が働く）</li>
+        <li><strong>フレミングの右手の法則</strong>：発電機作用の原理（磁界中で導体を動かすと、磁界と運動方向に垂直な方向に起電力が生じる）</li>
+    </ul>
+
+    <h3>2.2 直流発電機の原理</h3>
+
+    <ol>
+        <li>電機子を回転させると、フレミングの右手の法則により電機子巻線に起電力が誘導される</li>
+        <li>整流子とブラシの働きにより、交流として発生した電圧が直流に変換される</li>
+        <li>発生した電圧は端子から外部に供給される</li>
+    </ol>
+
+    <h3>2.3 直流電動機の原理</h3>
+
+    <ol>
+        <li>電機子に電流を流すと、フレミングの左手の法則により電磁力が発生する</li>
+        <li>整流子とブラシの働きにより、電機子巻線に流れる電流の向きが適切に切り替わり、回転力が持続する</li>
+        <li>電機子の回転中は逆起電力が発生し、これが回転速度に影響する</li>
+    </ol>
+
+    <div class="important">
+        <p><strong>重要ポイント</strong>: 直流電動機が回転するとき、フレミングの右手の法則により逆起電力が生じ、これは電源電圧と逆向きになります。機械的負荷が増加して回転速度が低下すると、逆起電力は減少し、電機子電流が増加します。</p>
+    </div>
+
+    <h2>3. 直流機の電機子巻線方式</h2>
+
+    <h3>3.1 重ね巻（並列巻）</h3>
+
+    <p>コイルを順次重ねて接続する方式</p>
+    <ul>
+        <li>特徴：
+            <ul>
+                <li>並列回路数(a)と磁極数(p)は等しい (a = p)</li>
+                <li>並列回路数とブラシの数は等しい</li>
+                <li>低電圧、大電流用途に適している</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>3.2 波巻（直列巻）</h3>
+
+    <p>コイルを波状に接続する方式</p>
+    <ul>
+        <li>特徴：
+            <ul>
+                <li>並列回路数は常に2となる (a = 2)</li>
+                <li>ブラシの数も2となる</li>
+                <li>高電圧、小電流用途に適している</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>4. 直流発電機の種類と特性</h2>
+
+    <h3>4.1 他励発電機（他励式）</h3>
+
+    <p>界磁電流を別の直流電源から供給する方式</p>
+    <ul>
+        <li>特性：
+            <ul>
+                <li>界磁電流を自由に制御できるため、発生電圧を広い範囲で調整できる</li>
+                <li>無負荷飽和曲線：界磁電流と端子電圧の関係を示す</li>
+                <li>外部特性曲線：負荷電流と端子電圧の関係を示す</li>
+                <li>負荷電流増加に伴い端子電圧が減少する</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>4.2 自励発電機（自励式）</h3>
+
+    <h4>4.2.1 分巻発電機</h4>
+    <p>界磁巻線と電機子巻線が並列接続</p>
+    <ul>
+        <li>特性：
+            <ul>
+                <li>残留磁気により電圧を確立</li>
+                <li>負荷電流の増加に伴い端子電圧が減少</li>
+                <li>端子電圧 V = E - (IaRa + va + vb + vf)</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h4>4.2.2 直巻発電機</h4>
+    <p>界磁巻線と電機子巻線が直列接続</p>
+    <ul>
+        <li>特性：
+            <ul>
+                <li>無負荷では電圧を確立できない（無負荷では界磁電流がゼロ）</li>
+                <li>負荷電流の増加に伴い端子電圧が上昇（ただし上限あり）</li>
+                <li>端子電圧 V = E -｛(Ra+Rf)I + va + vb｝</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h4>4.2.3 複巻発電機</h4>
+    <p>分巻巻線と直巻巻線の両方を持つ</p>
+    <ul>
+        <li>種類：
+            <ul>
+                <li>和動複巻：両巻線の磁束が強め合う接続</li>
+                <li>差動複巻：両巻線の磁束が弱め合う接続</li>
+            </ul>
+        </li>
+        <li>特性：
+            <ul>
+                <li>平複巻発電機：全負荷電圧が無負荷電圧と等しくなるように調整されたもの</li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="note">
+        <p><strong>試験ポイント</strong>: 複巻発電機の中で、平複巻発電機は全負荷電圧が無負荷電圧と等しくなるように（電圧変動率が零になるように）直巻巻線の起磁力を調整した発電機です。これは試験でよく問われる内容です。</p>
+    </div>
+
+    <h2>5. 直流電動機の種類と特性</h2>
+
+    <h3>5.1 他励電動機（他励式）</h3>
+
+    <p>界磁電流を別の直流電源から供給する方式</p>
+    <ul>
+        <li>特性：
+            <ul>
+                <li>界磁電流を独立して制御できるため、回転速度を広い範囲で調整可能</li>
+                <li>逆起電力 Ea = V - raIa</li>
+                <li>トルクと回転速度の制御が容易</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>5.2 自励電動機（自励式）</h3>
+
+    <h4>5.2.1 分巻電動機</h4>
+    <p>界磁巻線と電機子巻線が並列接続</p>
+    <ul>
+        <li>特性：
+            <ul>
+                <li>負荷変動に対して回転速度がほぼ一定に保たれる</li>
+                <li>負荷増加時にわずかに回転速度が減少する</li>
+                <li>始動トルクは直巻より小さい</li>
+                <li>回転速度の制御が容易</li>
+                <li>速度制御範囲は広い</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h4>5.2.2 直巻電動機</h4>
+    <p>界磁巻線と電機子巻線が直列接続</p>
+    <ul>
+        <li>特性：
+            <ul>
+                <li>負荷増加に伴い回転速度が大きく減少する</li>
+                <li>大きな始動トルクを発生できる</li>
+                <li>無負荷で高速回転する危険性がある（暴走現象）</li>
+                <li>速度制御範囲は狭い</li>
+                <li>電車、クレーンなど大きな始動トルクを要する用途に適している</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h4>5.2.3 複巻電動機</h4>
+    <p>分巻巻線と直巻巻線の両方を持つ</p>
+    <ul>
+        <li>種類：
+            <ul>
+                <li>和動複巻：分巻と直巻の特性の中間的な特性</li>
+                <li>差動複巻：速度変動が大きく、実用性に乏しい</li>
+            </ul>
+        </li>
+    </ul>
+
+    <table>
+        <tr>
+            <th>電動機の種類</th>
+            <th>トルク特性</th>
+            <th>速度特性</th>
+            <th>主な用途</th>
+        </tr>
+        <tr>
+            <td>分巻電動機</td>
+            <td>負荷電流に比例</td>
+            <td>ほぼ一定（わずかに減少）</td>
+            <td>工作機械、送風機、ポンプなど</td>
+        </tr>
+        <tr>
+            <td>直巻電動機</td>
+            <td>負荷電流の二乗に比例</td>
+            <td>負荷増加で大きく減少</td>
+            <td>クレーン、電車、巻上機など</td>
+        </tr>
+        <tr>
+            <td>複巻電動機</td>
+            <td>中間的な特性</td>
+            <td>中間的な特性</td>
+            <td>圧延機、プレス機、エレベーターなど</td>
+        </tr>
+    </table>
+
+    <h2>6. 直流機の重要な公式</h2>
+
+    <h3>6.1 直流発電機の公式</h3>
+
+    <div class="formula">
+        <p><strong>誘導起電力</strong>: E = (pZ/60a)ϕn = K₁ϕn</p>
+        <ul>
+            <li>p: 磁極数</li>
+            <li>Z: 電機子導体数</li>
+            <li>a: 並列回路数（重ね巻では a = p、波巻では a = 2）</li>
+            <li>ϕ: 1極当たりの磁束 [Wb]</li>
+            <li>n: 回転速度 [min⁻¹]</li>
+            <li>K₁: 電圧定数</li>
+        </ul>
+    </div>
+
+    <div class="formula">
+        <p><strong>端子電圧</strong>（他励発電機）: V = E - (IaRa + va + vb)</p>
+        <p><strong>端子電圧</strong>（分巻発電機）: V = E - (IaRa + va + vb + vf)</p>
+        <p><strong>端子電圧</strong>（直巻発電機）: V = E -｛(Ra+Rf)I + va + vb｝</p>
+    </div>
+
+    <h3>6.2 直流電動機の公式</h3>
+
+    <div class="formula">
+        <p><strong>逆起電力</strong>（分巻電動機）: Ea = V - raIa</p>
+        <p><strong>逆起電力</strong>（直巻電動機）: Ea = V - (ra + rf)Ia</p>
+        <p><strong>トルク</strong>: T = (pZ/2πa)ϕIa = K₂ϕIa [N・m]</p>
+        <p><strong>出力</strong>: Po = ωT = 2π(N/60)T = EaIa [W]</p>
+    </div>
+
+    <div class="important">
+        <p><strong>計算問題対策</strong>: 回転速度が変化した場合の誘導起電力の計算が頻出します。誘導起電力は回転速度に比例することを覚えておきましょう。</p>
+        <p>例題：回転速度が1,500rpm→1,000rpmに変化した場合の誘導起電力の変化</p>
+        <p>E2 = E1 × (n2/n1) = E1 × (1,000/1,500) = E1 × (2/3)</p>
+    </div>
+
+    <h2>7. 直流機の試験対策のポイント</h2>
+
+    <ol>
+        <li>直流機の基本構造（特に整流子とブラシの役割）を理解する</li>
+        <li>フレミングの左手・右手の法則を確実に理解する</li>
+        <li>他励式、分巻式、直巻式、複巻式の回路構成の違いを理解する</li>
+        <li>各種類の直流機の特性（トルク特性、速度特性、外部特性）を理解する</li>
+        <li>重要な公式を覚え、計算問題に対応できるようにする</li>
+        <li>電機子反作用、整流作用など、特殊な現象についても理解する</li>
+    </ol>
+
+    <div class="note">
+        <p>試験では、これらの基本知識を元に、回路図の理解や計算問題、特性の説明などが出題されることが多いです。特に、各種類の直流機の特性の違いを理解し、適切な用途を判断できるようにしておくことが重要です。</p>
+    </div>
+
+    <div class="important">
+        <p><strong>過去問でよく出る問題</strong></p>
+        <ul>
+            <li>直流発電機の種類と特性の比較（他励、分巻、直巻、複巻の違い）</li>
+            <li>回転速度の変化に伴う誘導起電力の計算</li>
+            <li>電機子反作用と整流作用の説明</li>
+            <li>直流電動機のトルクと回転速度の関係</li>
+            <li>直流機の巻線方式（重ね巻と波巻の違い）</li>
+        </ul>
+    </div>
+
+    <footer style="margin-top: 50px; text-align: center; font-size: 0.9em; color: #6c757d; border-top: 1px solid #dee2e6; padding-top: 20px;">
+        <p>© 2025 2級電気工事施工管理技士試験対策資料</p>
+    </footer>
+</body>
+</html>
